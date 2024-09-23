@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Birthstone&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Birthstone", sans-serif;
+}
+
+:root {
+    --color_text-primary: #020202;
+    --color_text-secundary: #e0ab23;
+    --color_text-tertiary: #e2e2e2;
+    --color_text-quaternary: #fc1818;
+    --text_title-size: 60px;
+    --text_paragraph: 35px;
+    --main_color: #f0eded;
+    --form_color: #f0edef;
+    --form_info-color: #201b1b;
+}
+
+.back{
+    display: flex;
+    gap:10px;
+    align-items: center;
+    padding: 20px 0 0 20px;
+    font-size: 26px;
+    color: var(--color_text-primary);
+}
+
+
+.editar_producto{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 30px;
+    border: 2px solid var(--form_info-color);
+    background-color: var(--main_color);
+    border-radius: 10px;
+    width: 700px;
+    margin: auto;
+    margin-top: 100px;
+    box-shadow: 5px 5px 5px var(--form_info-color);
+    margin-bottom: 50px;
+}
+
+.text-container{
+    max-width: 40%;
+}
+
+.editar_producto .text-container h1{
+    text-align: center;
+    font-size: 45px;
+    padding-bottom: 20px;
+    color: var(--color_text-quaternary);
+    text-shadow: 1px 1px 1px #424242;
+}
+
+.editar_producto p{
+    font-size: 25px;
+}
+
+.editar_producto img{
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.contact i{
+    font-size: 30px;
+}
+
+.contact .whatsapp i{
+    color: #2fe02f;
+}
+
+.contact .phone i{
+    color: #2727e4;
+}
+
+.contact i:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+@media(max-width:720px) {
+
+    .editar_producto {
+        width: auto;
+    }
+
+    .editar_producto img {
+        width: 150px;
+        height: 150px;
+    }
+
+}
+
+@media(max-width:600px) {
+
+    .editar_producto .text-container h1{
+      font-size: 30px;
+    }
+
+    .editar_producto p{
+        font-size: 20px;
+    }
+}
+
+@media(max-width:500px) {
+    .editar_producto img {
+        width: 100px;
+        height: 100px;
+    }
+}

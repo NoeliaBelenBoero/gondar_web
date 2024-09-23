@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Birthstone&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Birthstone", sans-serif;
+}
+
+:root {
+    --color_text-primary: #020202;
+    --color_text-secundary: #e0ab23;
+    --color_text-tertiary: #e2e2e2;
+    --color_text-quaternary: #fc1818;
+    --text_title-size: 60px;
+    --text_paragraph: 35px;
+    --main_color: #f0eded;
+    --form_color: #f0edef;
+    --form_info-color: #201b1b;
+}
+
+html{
+    scroll-behavior: smooth;
+}

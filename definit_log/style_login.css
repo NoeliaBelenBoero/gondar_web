@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Birthstone&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Birthstone", sans-serif;
+}
+
+:root {
+    --color_text-primary: #020202;
+    --color_text-secundary: #e0ab23;
+    --color_text-tertiary: #e2e2e2;
+    --color_text-quaternary: #fc1818;
+    --color_bacground_consulta:#2fe02f;
+    --text_title-size: 60px;
+    --text_paragraph: 35px;
+    --main_color: #f0eded;
+    --form_color: #f0edef;
+    --form_info-color: #201b1b;
+}
+
+ 
+/*PANTALLA DE LOGIN*/
+.form__login{
+    max-width:1300px;
+    /*height: 100%;*/
+    margin: auto;
+    background-image: url("../assets/IMG_20210919_124417.jpg");
+    background-size:cover;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.back_1 i{
+    display: flex;
+    gap: 10px;
+    font-size: 15px;
+    padding: 20px 1100px 0 0;
+    color: var(--color_text-primary);
+    text-shadow: 2px 2px 2px var(--main_color);
+}
+
+.iniciar__sesion{
+    width: 500px;
+    height: 490px;
+    margin: 75px auto;
+    display: grid;
+    justify-content: center;
+    box-shadow: 10px 10px 50px 50px var(--form_info-color);
+    text-align: center;
+    align-items: center;
+    border-radius: 5px;
+}
+    
+
+.sesion{
+    width: 400px;
+    height: 50px;
+    border: none;
+    font-size: 25px;
+    padding-left: 10px;
+    background-color: var(--form_color);
+    box-shadow: 2px 2px 2px var(--form_info-color);
+    border-radius: 5px;
+}
+
+.iniciar__sesion h1{
+    color: var(--color_text-quaternary);
+    font-size: 70px;
+    text-align: center;
+    text-shadow: 2px 2px 2px var(--form_color);
+    font-weight: bold;
+}
+.sesion__btn {
+    margin:auto;
+    width: 400px;
+    height: 50px;
+    color:var(--form_color);
+    text-shadow: 2px 2px 2px var(--color_text-primary);
+    background-color:var(--color_text-quaternary);
+    border: none;
+    border-radius: 5px;
+    font-size: 30px;
+    box-shadow: 2px 2px 2px var(--form_info-color);
+}
+.sesion__btn:active{
+    background: transparent;
+    box-shadow: 2px 2px 20px 5px var(--color_text-quaternary);
+    color: var(--color_text-quaternary);
+    cursor: pointer;
+}
+
+@media(max-width:1200px) {
+    .form__login{
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .back_1{
+        display: none;
+    }
+}
+
+@media(max-width:850px) {
+    .form__login {
+        width: auto;
+        height: 100%;
+    }
+
+    .iniciar__sesion {
+        width: 300px;
+        height: 490px;
+    }
+
+    .sesion {
+        width: auto;
+        height: auto;
+    }
+
+    .iniciar__sesion h1 {
+        font-size: 40px;
+    }
+
+    .sesion__btn {
+        width: 100%;
+        height: auto;
+        font-size: 20px;
+    }
+
+}

@@ -1,0 +1,211 @@
+.container__contact {
+    padding: 80px 80px;
+    background: var(--main_color);
+    max-width: 1300px;
+    height: 100%;
+    margin: auto;
+}
+
+.title_contact {
+    font-size: var(--text_title-size);
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.contact_wrapper {
+    box-shadow: 0 0 20px 0 var(--color_text-tertiary);
+    color: var(--color_text-primary);
+    font-size: 27px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.contact_wrapper>* {
+    padding: 30px;
+}
+
+.contact_form {
+    background: var(--form_color);
+}
+
+.contact_info {
+    background: var(--form_info-color);
+}
+
+.contact_form form {
+    margin: 0;
+    padding: 20px;
+}
+
+.contact_form form button,
+.contact_form form input,
+.contact_form form textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: none;
+    border-bottom: 1px solid var(--color_text-quaternary);
+    outline: none;
+}
+
+.contact_form form label {
+    font-size: 24px;
+    color: #524e4e;
+    font-weight: bold;
+}
+
+.contact_form form input,
+.contact_form form textarea {
+    font-size: 15px;
+    font-family: sans-serif;
+    color: #524e4e;
+}
+
+.contact_form form button {
+    margin: auto;
+    font-size: 30px;
+    color: var(--main_color);
+    border-radius: 10px;
+    border-style: none;
+    background: var(--color_text-quaternary);
+    color: var(--color_text-tertiary);
+    text-shadow: 2px 2px 2px var(--color_text-primary);
+    margin-top: 50px;
+    height: 65px;
+}
+
+.contact_form form button:hover {
+    background: transparent;
+    box-shadow: 2px 2px 20px 5px var(--color_text-quaternary);
+    color: var(--color_text-quaternary);
+    cursor: pointer;
+}
+
+.warnings {
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    color: brown;
+    padding-top: 20px;
+}
+
+.contact_info {
+    color: var(--color_text-tertiary);
+}
+
+.contact_info h3{
+    box-shadow: 0 0 20px 0 var(--color_text-tertiary);
+    text-align: center;
+    margin: 0 0 20px 0;
+}
+
+.contact_info ul {
+    list-style: none;
+    padding-top: 30px;
+}
+
+.contact_info ul li{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding-bottom: 30px;
+}
+
+.contact_info ul li img{
+   width: 45px; 
+}
+
+.contact_info ul li h4{
+    text-shadow: 2px 2px 2px #000000;
+}
+
+
+@media(max-width:700px){
+    .contact_wrapper{
+        display: grid;
+        grid-template-columns: none;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media(max-width:360px){
+    .container__contact{
+        padding: 0;
+        margin-bottom: 100px;
+    }
+    .title_contact{
+        font-size: 40px;
+    }
+    .container__contact .contact_wrapper .contact_form{
+        padding:0;
+    }
+    .contact_wrapper .contact_form h2{
+        font-size: 30px;
+    }
+    .contact_wrapper .contact_info h3{
+        box-shadow: none;
+        font-size: 30px;
+        text-shadow: 2px 2px 2px var(--color_text-primary);
+    }
+    .contact_form form label {
+        font-size: 20px;
+    }
+    
+    .contact_form form input,
+    .contact_form form textarea {
+        font-size: 11px;
+    }
+    .contact_form form button{
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        font-size: 12px;
+    }
+
+    .contact_info ul {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        font-size: 15px;
+    }
+} 
+
+
+@media(max-width:260px){
+    .container__contact .contact_wrapper .contact_form{
+         text-align: center;
+         padding: 0;
+    }
+    .contact_form p{
+        width: auto;
+        height: auto;
+    }
+    .contact_info{
+        padding: 0;
+    }
+
+    .contact_wrapper .contact_info h3{
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+@media(max-width:220px){
+    .title_contact{
+        font-size: 20px;
+    }
+    .contact_wrapper .contact_form h2{
+        font-size: 18px;
+    }
+
+    .contact_form form label {
+        font-size: 15px;
+    }
+
+    .contact_info ul li {
+        gap: 10px;
+        font-size: 10px;
+        padding-right: 0;
+    }
+}

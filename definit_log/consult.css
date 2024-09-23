@@ -1,0 +1,54 @@
+.back{
+    display: flex;
+    gap:7px;
+    align-items: center;
+    padding: 20px 0 0 30px;
+    text-decoration: none;
+}
+
+table{
+    margin: auto;
+    text-align: center;
+    max-width: 1300px;
+}
+
+
+thead tr th{
+    padding-bottom: 70px;
+}
+
+thead tr{
+    height: 70px;
+    color: var(--color_text-quaternary);
+}
+
+
+
+thead tr th{
+    width:20%;
+}
+
+
+tbody tr td{
+    padding: 40px 0;
+}
+
+tbody tr td .eliminar{
+    margin-right: 30px;
+}
+
+#btn{
+    width: 80px;
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+i:hover{
+    opacity: 0.5;
+}
+
+.bd-example button{
+    margin-bottom: 10px;
+}
